@@ -10,6 +10,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.TreeSet;
+import java.util.function.Function;
 
 public class ListaPessoa {
 
@@ -41,6 +42,8 @@ public class ListaPessoa {
 
         List<Pessoa> listaOrdenadaPorNome = new ArrayList<>(lista_pessoa);
         listaOrdenadaPorNome.sort(new ComparatorNome());
+
+        // listaOrdenadaPorNome.sort(Comparator.comparing(Pessoa::getNome));
 
         return listaOrdenadaPorNome;
 

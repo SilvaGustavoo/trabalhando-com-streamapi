@@ -2,6 +2,7 @@ package StreamApi.metodos;
 import java.util.Arrays;
 import java.util.List;
 import java.util.function.Consumer;
+import java.util.stream.Stream;
 
 public class ConsumerExample {
 
@@ -17,6 +18,8 @@ public class ConsumerExample {
                 System.out.println("Número par: " + numero);
             }
         };
+
+        System.out.println(imprimirNumeroPar);
 
         // list_numbers.stream().forEach(imprimirNumeroPar);
         list_numbers.forEach(numero -> {
